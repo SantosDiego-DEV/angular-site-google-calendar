@@ -3,7 +3,7 @@
 Plataforma pessoal moderna e modular de gestão de compromissos e agenda, desenvolvida com **Angular (Standalone Components)** no frontend e um backend serverless leve em **Node.js/TypeScript**, integrada de forma segura com a **Google Calendar API** via OAuth2.
 
 🌐 **Frontend Local:** `http://localhost:4200`
-🔥 **Frontend PROD:** `https://diegosantos18.github.io/angular-site-google-calendar`
+🔥 **Frontend PROD:** `https://SantosDiego-DEV.github.io/angular-site-google-calendar`
 
 🌐 **API local (handler Vercel):** `http://localhost:3000`
 🔥 **API PROD (handler Vercel):** `https://angular-site-google-calendar.vercel.app`
@@ -213,7 +213,7 @@ Se a resposta não trouxer `refresh_token`, revogue o acesso concedido ao client
 | `GOOGLE_CLIENT_ID`                 | Identifica o cliente OAuth no backend e no gerador de token.                                                                            |
 | `GOOGLE_CLIENT_SECRET`             | Segredo OAuth; somente API/scripts locais, nunca no Angular.                                                                            |
 | `GOOGLE_REFRESH_TOKEN`             | Token de longa duração usado pela API para acessar o Calendar.                                                                          |
-| `ALLOWED_ORIGIN`                   | Origem autorizada por CORS, sem caminho. Local: `http://localhost:4200`; Vercel: `https://diegosantos18.github.io`.                     |
+| `ALLOWED_ORIGIN`                   | Origem autorizada por CORS, sem caminho. Local: `http://localhost:4200`; Vercel: `https://SantosDiego-DEV.github.io`.                     |
 | `OAUTH_REDIRECT_URI`               | Callback local do script `auth:generate`; padrão `http://localhost:3001/oauth2callback`.                                                |
 | `OAUTH_CALLBACK_TIMEOUT_MS`        | Tempo máximo de espera pelo callback OAuth em milissegundos; padrão `300000` (5 minutos).                                               |
 | `API_URL_SEED`                     | Base da API para scripts de seed, por exemplo `http://localhost:3000/api`.                                                              |
@@ -377,7 +377,7 @@ O build Angular é emitido em `dist/meu-site/browser`.
 
 1. Vincule o repositório a um projeto Vercel com a raiz do projeto na raiz do repositório.
 
-2. Configure `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` e `ALLOWED_ORIGIN` nas variáveis de ambiente da Vercel. Para este repositório, a origem do GitHub Pages é `https://diegosantos18.github.io` (sem o caminho `/angular-site-google-calendar/`).
+2. Configure `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` e `ALLOWED_ORIGIN` nas variáveis de ambiente da Vercel. Para este repositório, a origem do GitHub Pages é `https://SantosDiego-DEV.github.io` (sem o caminho `/angular-site-google-calendar/`).
 
 3. Use `angular-site-google-calendar` como nome sugerido do projeto Vercel para obter `https://angular-site-google-calendar.vercel.app`. Faça deploy e teste `https://angular-site-google-calendar.vercel.app/`, `/api/openapi` e `/api/calendar?action=health`. Se a Vercel atribuir outro domínio, use esse domínio real nos passos seguintes.
 
