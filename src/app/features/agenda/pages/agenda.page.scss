@@ -50,7 +50,6 @@
   .btn-open-modal.mat-mdc-unelevated-button,
   .btn-open-modal.mat-mdc-raised-button,
   .btn-open-modal {
-    width: 20%;
     font-weight: 600;
     padding: 0 1.25rem;
     height: 44px;
@@ -60,7 +59,7 @@
     color: var(--mat-sys-on-primary, #ffffff);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    width: 100%;
+    width: 20%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
